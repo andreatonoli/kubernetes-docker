@@ -76,10 +76,10 @@ kubectl top node     # Mostra l'utilizzo delle risorse dei nodi
 ## Gestione delle Immagini
 
 ```
-docker images                            # Mostra le immagini Docker locali
-docker pull <image>                      # Scarica un'immagine dal Docker Hub
-docker rmi <image>                       # Rimuove un'immagine dal sistema
-docker build -t <image-name>:<tag> .     # Crea un'immagine da un Dockerfile
+docker images                                                                          # Mostra le immagini Docker locali
+docker pull <region>-docker.pkg.dev/<project-id>/<repo-name>/<image-name>:<tag>        # Scarica un'immagine dal Docker Hub
+docker rmi <image>                                                                     # Rimuove un'immagine dal sistema
+docker build -t <image-name>:<tag> .                                                   # Crea un'immagine da un Dockerfile
 ```
 
 ## Push delle Immagini (Artifact Registry)
