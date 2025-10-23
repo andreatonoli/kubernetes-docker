@@ -15,7 +15,7 @@ kubectl get pods -A                          # Elenca tutti i pod in tutti i nam
 kubectl describe pod <pod-name>              # Mostra dettagli su un pod specifico
 kubectl logs <pod-name>                      # Visualizza i log di un pod
 kubectl logs -f <pod-name>                   # Mostra i log in tempo reale
-kubectl exec -it <pod-name> -- <command>     # Esegue un comando in un pod
+kubectl exec -it <pod-name> -- /bin/bash     # accedi alla shell del pod
 kubectl delete pod <pod-name>                # Elimina un pod specifico
 ```
 
