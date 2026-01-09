@@ -88,7 +88,7 @@ docker build -t <image-name>:<tag> .                                            
 gcloud auth configure-docker <region>-docker.pkg.dev
 # Configura l'autenticazione Docker per Artifact Registry
 
-docker tag <image-name>:<tag> <region>-docker.pkg.dev/<project-id>/<repo-name>/<image-name>:<tag>
+docker tag <image-old-name>:<old-tag> <region>-docker.pkg.dev/<project-id>/<repo-name>/<image-name>:<tag>
 # Tagga l'immagine
 
 docker push <region>-docker.pkg.dev/<project-id>/<repo-name>/<image-name>:<tag>
