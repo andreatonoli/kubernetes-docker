@@ -10,7 +10,7 @@ kubectl delete -f <file>.yaml     # Elimina una risorsa definita in un file YAML
 ## Gestione dei Pod
 
 ```
-kubectl get pods                             # Elenca tutti i pod nel namespace corrente
+kubectl get pods -o wide                     # Elenca tutti i pod nel namespace corrente e le loro informazioni
 kubectl get pods -A                          # Elenca tutti i pod in tutti i namespace
 kubectl describe pod <pod-name>              # Mostra dettagli su un pod specifico
 kubectl logs <pod-name>                      # Visualizza i log di un pod
